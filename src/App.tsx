@@ -5,6 +5,7 @@ import { Header } from './components/Header';
 import { GlobalStyle } from './styles/global';
 
 import Modal from 'react-modal';
+import { NewtrasnsactionModal } from './components/NewtrasnsactionModal';
 
 Modal.setAppElement('#root');
 
@@ -24,12 +25,10 @@ export function App() {
     <>
       <Header onOpenNewTransitionModal={handleOpenTransactionModal} />
       <Dashboard />
-      <Modal
+      <NewtrasnsactionModal 
         isOpen={isNewTransactionModalOpen}
         onRequestClose={handleCloseTransactionModal}
-      >
-        <h2>Cadastra transação</h2>
-      </Modal>'
+      />
       <GlobalStyle />
     </>
   );
