@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
-export  const Container = styled.header`
+export const Container = styled.header`
 margin-top:4rem;
 
 table{
     width:100%;
-    border-spacing:0.5rem;
+    border-spacing:0 0.5rem;
 
     th{
         color: var(--text-body);
